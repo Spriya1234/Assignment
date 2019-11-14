@@ -1,0 +1,42 @@
+body{
+    overflow: hidden;
+    background-image: url(trees.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+div {
+  width: 360px;
+  height: 100px;
+  background-image:url(move3.gif);
+  background-size: 360px 100px;
+  position: absolute;
+  bottom: 0;
+  -webkit-animation: mymove 60s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 60s infinite;
+}
+
+
+@-webkit-keyframes mymove {
+  from {left:-20%;}
+  to {left:100%;}
+}
+
+@keyframes mymove {
+  from {left:-20%;}
+  to {left:100%;}
+}
+
+
+@media only screen and (max-width: 600px){
+
+div {
+  width: 180px;
+  height: 50px;
+  background-image:url(move.gif);
+  background-size: 180px 50px;
+  -webkit-animation: mymove 30s infinite;
+  animation: mymove 30s infinite;
+}
+
+}
