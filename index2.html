@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.9.1.js'></script>
+<script type='text/javascript'>
+$(document).ready(function(){
+   setInterval(callMe,4000);
+});
+function callMe(){
+   $("div").animate({left:'100%'},(30000)).fadeOut().animate({left:'-500px'}).fadeIn();
+}
+
+</script>
+<style type="text/css">
+	body{
+    overflow: hidden;
+    background-image: url(trees.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+div {
+  width: 360px;
+  height: 100px;
+  background-image:url(move3.gif);
+  background-size: 360px 100px;
+  position: absolute;
+  bottom: 0;
+  left: -500px;
+}
+</style>
+</head>
+<body>
+  
+  <div>
+  </div>
+</body>
+</html>
